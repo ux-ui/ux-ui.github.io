@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.02 8.05">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        opacity: .8;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 1.4px;
+      }
+    </style>
+  </defs>
+  <g id="icon">
+    <polyline class="cls-1" points=".49 7.56 4.03 4.03 .49 .49"/>
+  </g>
+</svg>

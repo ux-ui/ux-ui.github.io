@@ -1,0 +1,164 @@
+.board .contents-wrap{
+
+}
+
+.board .contents {
+    background: #f8f9fc;
+    height: 100vh;
+}
+
+
+.board-wrap{
+    padding: 50px;
+    margin:50px;
+    background: #fff;
+}
+
+.board-wrap .tit-1{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.btn-st.bg-c-03 {
+    width: 80px;
+    color: #fff;
+}
+
+.board .btn-st.del,
+.board .btn-st.mod,
+.board .btn-st.list,
+.board .btn-st.appr{
+    width: 80px;
+    height: 50px;
+    color: #fff;
+}
+
+.list{
+    width: 100%;
+    border-top: 1px solid #333;
+
+}
+
+.list th,
+.list td{
+    padding: 10px;
+}
+
+.list td{
+    font-weight: 300;
+}
+
+.list .bd-box{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.list .bd-box:hover{
+    border:1px solid #41bfff;
+    transition: 0.2s;
+}
+
+.list{
+    width: 100%;
+    border-top: 1px solid #333;
+}
+
+.list div{
+    width: 100%;
+    float: left;
+    padding: 8px 10px;
+}
+
+.list .tit p{
+    font-weight: 500;
+}
+
+.list .chk-box{
+    width: 5%;
+}
+
+.list .number{
+    width: 5%;
+    text-align: center;
+}
+
+.list .title{
+    width: 70%;
+}
+.list .file{
+    width: 15%;
+    float: right;
+    text-align: center;
+}
+
+.list .file p{
+    display: block;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+
+}
+
+.pagenation{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.pagenation .arr-pre,
+.pagenation .arr-nxt{
+    font-size: 0;
+    opacity: 0.2;
+}
+
+.pagenation a{
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.pagenation .arr-pre{
+    background: url("../images/common/arr-pre.png") center no-repeat;
+    margin-right: 10px;
+}
+
+.pagenation .arr-nxt{
+    background: url("../images/common/arr-nxt.png") center no-repeat;
+    margin-left: 10px;
+}
+
+.pagenation .num.on{
+    background: #41bfff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+table.view{
+    width: 100%;
+    border-top: 1px solid #333;
+}
+
+table.view tr{
+    border-bottom: 1px solid #ddd;
+}
+
+table.view th{
+    border-right: 1px solid #ddd;
+}
+
+table.view th,
+table.view td{
+    padding: 20px;
+}
+
+table.view td{
+    font-weight: 300;
+}
+
+
+
+.board.view .btn-wrap{
+	margin: 0 50px;
+}
+

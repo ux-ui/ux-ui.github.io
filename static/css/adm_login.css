@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Pretendard';
+}
+
+body {
+    margin: 0;
+    font-family: "Pretendard","Noto Sans Korean", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", 
+      Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, 
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    background-color: #fff;
+    letter-spacing: -0.05em;
+    width: 100%;
+    overflow-x: hidden;
+    word-break: keep-all;
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+button {
+    border-radius: 0;
+    border: 0;
+  }
+  
+  button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+  
+  input,
+  button,
+  select,
+  optgroup,
+  textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  button,
+  input {
+    overflow: visible;
+  }
+  
+  button,
+  select {
+    text-transform: none;
+  }
+  
+  [role="button"] {
+    cursor: pointer;
+  }
+  
+  select {
+    word-wrap: normal;
+  }
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  button:not(:disabled),
+  [type="button"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  [type="submit"]:not(:disabled) {
+    cursor: pointer;
+  }
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf') format("truetype");
+    font-display: swap;
+}
+
+.adm_login_wrap {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adm_cbox_wrap{
+    width: 450px;
+    background-color: #fff;
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba( 0 0 0 / 10%);
+}
+
+.adm_cbox_wrap h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.adm_login-form input{
+    width: 100%;
+    border: 1px solid #eaeaea;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.adm_login-form .item p{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.adm_login-form .item:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.adm_login-form button{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 640px) {
+
+    .adm_cbox_wrap{
+        width: 90%;
+        padding: 40px 30px;
+    }
+}

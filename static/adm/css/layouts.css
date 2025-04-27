@@ -1,0 +1,503 @@
+.wrap {
+	width:1920px;
+	margin:0 auto;
+	position:relative;
+}
+
+.contents .inner{
+    padding: 40px;
+}
+
+
+.half-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100vh - 140px);;
+}
+
+.half-wrap .left-wrap{
+    width: 60%;
+}
+
+.half-wrap .right-wrap{
+    position: relative;
+    width: 40%;
+    background-color: #f5f5f5;
+}
+
+.side-menu {
+	position:fixed;
+	top:0;
+	left:0;
+	width:350px;
+	background:#fff;
+	height:100vh;
+	overflow-y:scroll;
+	box-shadow: 1px 1px 10px rgba( 0 0 0 / 10%);
+	z-index: 9;
+}
+
+.side-menu{
+	-ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.side-menu::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+.side-menu>.inner {
+	width:auto;
+	padding:0 20px;
+}
+
+.top-menu .logo,
+.side-menu .logo {
+    margin: 20px auto 0 auto;
+    width: 100%;
+    height: 40px;
+    background-image: url(../images/common/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.accordion {
+	width:100%;
+	margin-top:20px;
+}
+.accordion>li{
+	margin-bottom:20px;
+}
+
+.accordion>li .submenu{
+	margin-top: 20px;
+}
+
+.accordion .link {
+	cursor:pointer;
+	display:block;
+	padding:15px 15px 15px 30px;
+	border:1px solid #dddddd;
+	position:relative;
+	-webkit-transition:all 0.4s ease;
+	-o-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	border-radius:10px;
+}
+
+.accordion .link.no-depth p{
+	padding-left: 0;
+}
+
+.accordion .link p {
+	font-weight:400;
+	background-repeat:no-repeat;
+	padding-left:30px;
+	background-size:20px;
+	background-position:left center;
+}
+.accordion .link .icon-pop {
+	background-image:url("../images/common/icon-main.png");
+}
+.accordion .link .icon-board {
+	background-image:url("../images/common/icon-board.png");
+}
+.accordion .link .icon-admin {
+	background-image:url("../images/common/icon-admin.png");
+}
+.accordion .link .icon-mem {
+	background-image:url("../images/common/icon-mem.png");
+}
+.accordion .link .icon-trd {
+	background-image:url("../images/common/icon-trd.png");
+}
+.accordion .link .icon-pref {
+	background-image:url("../images/common/icon-pref.png");
+}
+.accordion .link .icon-3d {
+	background-image:url("../images/common/icon-3d.png");
+}
+.accordion .link .icon-foot {
+	background-image:url("../images/common/icon-foot.png");
+}
+.accordion .link .icon-part {
+	background-image:url("../images/common/icon-part.png");
+}
+.accordion .link .icon-match {
+	background-image:url("../images/common/icon-match.png");
+}
+.accordion .link .icon-eqres {
+	background-image:url("../images/common/icon-eqres.png");
+}
+.accordion .link .icon-edu {
+	background-image:url("../images/common/icon-edu.png");
+}
+
+.accordion .open .link {
+	background:#f5f5f5;
+	border:0;
+}
+.accordion li .arrw-icon {
+	display:block;
+	width:20px;
+	height:20px;
+	background:url("../images/common/arr-down.png") center no-repeat;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	right:20px;
+}
+.accordion li.open .arrw-icon {
+	background:url("../images/common/arr-up.png") center no-repeat;
+}
+.submenu {
+	display:none;
+}
+.submenu li {
+	border-radius:10px;
+}
+.submenu li.on {
+	background:#f5f5f5;
+}
+
+.submenu a {
+	display:block;
+	padding:12px;
+	padding-left:42px;
+	-webkit-transition:all 0.25s ease;
+	-o-transition:all 0.25s ease;
+	transition:all 0.25s ease;
+}
+.submenu a::before {
+	display:inline-block;
+	content:"";
+	width:5px;
+	height:5px;
+	border-radius:5px;
+	background:#ddd;
+	margin-right:20px;
+	transform:translateY(-5px);
+}
+.submenu li.on a::before {
+	background:#333;
+}
+.submenu li.on a {
+	font-weight: 500;
+}
+
+.contents-wrap{
+    width: 1570px;
+    position: absolute;
+    left: 350px;
+    background: #fff;
+}
+
+.gnb-btn {
+	display: none;
+	z-index: 9;
+	position: absolute;
+	left: 20px;
+	top: 50%;
+    transform: translateY(-50%);
+}
+
+.gnb-btn button{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border: 0;
+	background: transparent;
+}
+
+.gnb-btn button span{
+	position: absolute;
+	display: block;
+	height: 2px;
+	width: 22px;
+	background: #333;
+	top: 50%;
+	margin-top: -1px;
+	left: 50%;
+	margin-left: -11px;
+	transition: all 0.5s;
+}
+
+
+.gnb-btn button span:before{
+	position: absolute;
+	content:'';
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: #333;
+	top: -7px;
+	transform: rotate(0deg);
+	transition: all 0.5s;
+}
+
+.gnb-btn button span:after{
+	content:'';
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: #333;
+	position: absolute;
+	top: 7px;
+	transform: rotate(0deg);
+	transition: all 0.5s;
+}
+
+.gnb-btn.close{
+	left: 280px;
+}
+
+.gnb-btn.close button span{
+	background: transparent;
+}
+
+.gnb-btn.close button span:before{
+	transform: rotate(135deg);
+	top: 0;
+}
+
+.gnb-btn.close button span:after{
+	transform: rotate(-135deg);top: 0;
+}
+
+
+.contents-wrap .top-menu{
+    padding: 20px;
+}
+
+.contents-wrap .top-menu .btn-wrap{
+	margin: 0 0 0 auto;
+}
+
+.contents-wrap .top-menu > .inner{
+	position: relative;
+    padding: 0 20px;
+}
+
+.side-menu .login-wrap {
+	display: none;
+    justify-content: center;
+    border-top: 1px solid #eaeaea;
+    padding: 10px 0 0 0;
+}
+
+.side-menu .login-wrap p {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.login-wrap{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.login-wrap p {
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.login-wrap p span{
+    font-weight: 600;
+}
+
+.login-wrap .btn-wrap > button{
+    background: #fff;
+    padding: 2px 15px;
+    border-radius: 5px;
+}
+
+
+.login-wrap button.logout{
+    border:1px solid #e1514d;
+    color: #e1514d;
+}
+
+.login-wrap button.login{
+    border:1px solid #4177ff;
+    color: #4177ff;
+}
+
+.bread-wrap{
+    background: #07439a;
+    padding: 15px 40px;
+}
+
+.bread-wrap ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bread-wrap ul li{
+    color: #fff;
+    padding: 5px 16px 0 0;
+}
+
+.bread-wrap ul li::after{
+    display: inline-block;
+    content: "";
+    width: 9px;
+    height: auto;
+    background: url("../images/common/bc-arr.png") no-repeat;
+    background-size: 7px;
+    margin-left: 14px;
+    margin-top: 5px;
+    padding-top: 15px;
+    transform: translateY(4px);
+}
+
+.bread-wrap ul li:last-child:after{
+    display: none;
+}
+
+.bread-wrap ul li:first-child{
+    background: url("../images/common/home.png") left 3px no-repeat;
+    padding-left: 45px;
+    background-size: 30px;
+}
+
+.contents-wrap .top-menu .logo{
+	display: none;
+}
+	
+@media (min-width: 1921px) {
+    .contents-wrap{
+        position: fixed;
+		width: calc(100% - 350px);
+    }
+} 
+
+
+@media all and (max-width: 1800px) {
+	.wrap{
+		width: 100%;
+	}
+
+	.contents-wrap .top-menu > .inner{
+		padding: 0;
+	}
+
+	.login-wrap{
+		margin-left: 60px;
+	}
+
+	.contents-wrap {
+		width: 100%;
+		position: relative;
+		left: 0;
+		background: #fff;
+	}
+
+	.gnb-btn{
+		display: block;
+		left: 0;
+	}
+
+	.side-menu{
+		left: -350px;
+	}
+
+	.side-menu.open{
+		left: 0;
+		transition: 0.2s;
+		z-index: 999;
+	}
+
+	.gnb-btn.close {
+		right: 20px;
+		left: auto;
+		transform: none;
+		top: 20px;
+	}
+
+
+}
+
+@media all and (max-width: 1280px){
+
+	.half-wrap .left-wrap,
+	.half-wrap .right-wrap{
+		width: 100%;
+	}
+
+	.contents .inner{
+		padding: 20px;
+	}
+
+}
+
+@media all and (max-width: 1140px){
+
+
+
+
+}
+
+@media all and (max-width: 640px){
+
+	.contents-wrap .top-menu {
+		padding: 10px 20px 15px 20px;
+	}
+	
+	.gnb-btn{
+		left: 10px;
+	}
+
+	.bread-wrap{
+		padding: 10px 20px;
+	}
+
+	.top-menu .login-wrap{display: none;}
+
+	.side-menu{
+		width: 100%;
+	}
+
+	.side-menu{
+		left: -100%;
+	}
+
+	.side-menu .logo{
+		display: none;
+	}
+
+	.side-menu .login-wrap{
+		display: block;
+	}
+
+	.side-menu .login-wrap p{
+		margin-right: 0;
+	}
+
+	.side-menu .login-wrap{
+		border: 0;
+		padding-top: 20px;
+		margin-left: 0;
+	}
+
+	.accordion .link{
+		padding: 10px 15px 10px 30px;
+	}
+
+	.submenu a{
+		padding: 8px 12px 8px 12px;
+	}
+
+	.accordion>li {
+		margin-bottom: 10px;
+	}
+
+	.contents-wrap .top-menu .logo {
+		display: block;
+		margin: 0 auto;
+		width: 130px;
+		height: 40px;
+	}
+
+}

@@ -1,0 +1,220 @@
+.input__on-off{
+    display: none;
+}
+.label__on-off {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 58px;
+    height: 26px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    background-color: #ed4956;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.label__on-off > * {
+    vertical-align: middle;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    font-size: 14px;
+}
+
+.label__on-off .marble {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.label__on-off .on {
+    display: none;
+    padding-left: 12px;
+}
+
+.label__on-off .off {
+    padding-left: 30px;
+    line-height: 25px;
+}
+
+.input__on-off:checked + .label__on-off {
+    background-color: #0bba82;
+}
+
+.input__on-off:checked + .label__on-off .on {
+    display: inline-block;
+}
+
+.input__on-off:checked + .label__on-off .off {
+    display: none;
+}
+
+.input__on-off:checked + .label__on-off .marble {
+    left: 33px;
+}
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+xmp,pre{
+    max-width: 100%;
+    white-space: pre-wrap;
+    font-weight: inherit !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    line-height: inherit !important;
+    margin: 0;
+}
+textarea{
+    font-weight: inherit !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    line-height: inherit !important;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+         'FILL' 0,
+         'wght' 400,
+         'GRAD' 0,
+         'opsz' 48;
+    vertical-align: sub;
+}
+.material-symbols-outlined.delete{
+    cursor: pointer;
+    color: red;
+}
+
+.drop-zone {
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+}
+
+.drop-zone-dragenter, .drop-zone-dragover {
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #3e3e3e;
+}
+
+.editor__editable, main .ck-editor[role='application'] .ck.ck-content, .ck.editor__editable[role='textbox'], .ck.ck-editor__editable[role='textbox'], .ck.editor[role='textbox']{
+    min-height: 400px;
+    padding: 10px 20px;
+}
+
+#unable ~ input.invisible{
+    display: none;
+}
+#unable:checked ~ input.invisible {
+    display: block;
+}
+
+.question{
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+    width: 80px;
+    display: block;
+}
+.question.q-1{
+    border-color: #d2d2d2;
+    color: #666666;
+    background: #e6e6e6;
+}
+.question.q-2{
+    border-color: #a4d89a;
+    color: #3f7c1f;;
+}
+.question.q-3{
+    border-color: #c2caea;
+    color: #4262c7;
+}
+.question.q-4{
+    border-color: #debfeb;
+    color: #8d42a4;
+}
+table.normalBoardWr .resultTable th,
+table.normalBoardWr .resultTable td{
+    padding: 2px 15px;
+}
+td.material-symbols-outlined{
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #999999;
+}
+table.normalBoard.custom td{
+    padding: 8px;
+}
+table[class^=normalBoard].list.custom{
+    border-bottom: none;
+}
+table[class^=normalBoard].custom .ta-l{
+    text-align: left;
+}
+table[class^=normalBoard].list .ta-l{
+    text-align: left;
+}
+.comment{
+    text-align: right;
+    padding: 10px 20px;
+}
+.comment textarea{
+    height: 100px;
+    min-height: 100px;
+    width: 100%;
+    display: block;
+}
+.comment .submit{
+    height: 40px;
+    width: 100px;
+    color: white;
+    background: #333333;
+    border: none;
+    margin-top: 15px;
+}
+#comment-body td{
+    padding: 10px;
+}
+#comment-body td b{
+    width: 30%;
+    text-align: center;
+    float: left;
+}
+#comment-body td pre{
+    text-align: left;
+    width: 70%;
+    float: left;
+}
+#comment-body td .rt-comment{
+    cursor: pointer;
+}
+#comment-body td div.reply{
+    width: 90%;
+    padding-left: 10%;
+}
+.ck-source-editing-area textarea{
+    min-height: auto;
+}
